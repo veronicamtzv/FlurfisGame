@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Fredoka+One&family=Lemonada:wght@300&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header id="header">
+            <div class="headerItem" id="areaTitulo">
+                <img src="images/title.jpg" alt="" />
+            </div>
+            <div class="headerItem" id="areaPuntaje"></div>
+            <div class="headerItem" id="areaCorazones"></div>
+        </header>
+        <section id="areaDeJuego">
+            <button id="botonInicio" class="botonGrande">Iniciar</button>
+        </section>
+        <footer>
+            <p>Elaborado por: Alisson Verónica Martínez Vera</p>
+            <img
+                alt="ayuda"
+                id="botonAyuda"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAAHmUlEQVR4XtVci3EcNwwFroHIFcSqIEoFUSqQVUHsCuJUELmC2BXEqiBSBVIqSFyB5QpiN3DIvF3eLnf5A0junc0Zj8Z3XBJ4fAABkHtMJ2pMRGKd2/qQtX9BHgz37bcsKP0Q+ybBqlJf81DQx33g/dmQWVUSbihP29DdmKWBpUrUzQb2pdFN0g2sMhARgXQylofu2iMtFKe+0nzeqquIXBDRd0R06fQ9/PXVf3T/wd8vzPxvV2xSgyXW9ihzYxIReU5EVw6cSxI6Izu3PxMRgMO/e2Z+OpYCdlErJBORX4johftXHgEBmF6yOyK6Y+bb8sBtPZIi+SysNTcH0g0RgVFbtychutn5oPVQwpNav36GzUNEwKI/eoJkIBvM8hUzPw7sTKYJdgrUgRVwZJxYRM6I6M/Z3Awq9ucdzBOgwcd1aSFYBcBTX4sIdrK/iAiATe2kcBEBqOuBZR1aA7Nm2ETkdyKCb/pa22tmftcqXANY49QiArN72SpI+LzPyS78fM/Mr1rkbAKrHiiD8kNXQ/88Gk2AKcCKe6l6oFrWtsuzlYCxIfTznbYI/BP81HGblWDp/r8x89uZBgBCisVIBbOWeAy7ntDDGuZALqti8zQfaNzFsKv+MGhgllK1hj+ndslcXqwa2TlzKPBxHR6s4LRq94mI3rqUJcjzXD6JIPc1EX2vFjbacYE8FuTcEoeZ1kxEEEdB8GxTkgEg3TDz+9J4h+9FBLsuXEAjaNOMyCmvtfOrwXIpDMAytQRwMLXL5KpmAmNkCUL0yDDRUtP5hsAcG8xwSmVgfj0SYpRVRnbmpMoc/eCx/V7uiIdyj6lFFu+Jmc81g6iY5eiP4LO1TYyqxGnCeD/moUhjygybpE46COSQRXegBSvKqvjUWY8Fh9qtWOecP2RTtohs40cqdiXLyiun6lildN1R0eV2x7uXKeuSvVwQ069uAwFrsFuhcvBuWUpeclJEwAgUF8NmE7fIriKzRAQCm31DJD4aWRWxv9nMkyufVCTOruU4SsxmX5rg6QKstR52miet4QMzX8T8lMEfotSChQuaiOAQw+C7knI+y8VdWWaJCAJBVDxb2xtmDko4rlj4UYjOihQn+szMzxJg9Uq/hjQopWwJrDoTDGeLssIcuwld8y5kl4GdpUXPmqIHVmgkIvJfPrUpzT19H83DxJ6QpxiKKu1DVppCqcf5tSR7MXaCWUwiexyA/qOGoxjLVDnd9fRRM3El7TxYw0gqV/9j6iA3aYZ6Aexw5p4oqBON08zmnBc5W42Ihyh2E+mLWjiaM8Gou4BTRoxW2RZLFDX1jBkOtfVeO0wPBW6ZearzR0KcXnkrZK0CC3nXT5WaKt2DavTsdq7ZCVWeava598y7aBkq57PawFLhkOg0avcFp0apQHRw12MyjU2oRzXkIMzfzLy8zeOoHILlvhCRk4DlWACgUO/KXi/SHpqkmJX4PATLwdjALBu500QLxukKlDpgmAU0MMs9lGVWC07lZ5M54CEJDxhVHtPiFKqYdYrdMJtuhBdPNBikkUx8U7UbngKs8x0z7lkFzVVAcAaAzGLLVgVWOd/yRJ5XqdomhjJODAXcPRWiB/Zv6FRPk8F5HLMqgo/khltIOAmfXFERQXhQZFQgXUHcxNfp3DBz6oQ4BqVd3CYuNOPmHB/tDfPuZn1Vz5KjdlhK3IZe3C/zRT1WPauENr7HQUbsMAPCh6zqgExEKG09K+pUe1VK42BlFd4GjcKqzamVF7UfNpwSs5BGGI6aNATK9zkJRHOda6jBV59I43RHiK4UNfIlCgU3pgZF3bF5oWynO4ltG6WR4mn0UXTadpL2c0MAKCJwvFU3Vwz6Ne+G82IbZh0f+sTMxcqFyro0NaMw5LZe04oX3SyhQ4MhFlmFsVVgtbJrVKK42vUnNxGUirPNz6xYFdkGXV8LWKgemu9nGVY7AAvC7ceXERQnN4aZll2T6c3ULVn881BcJ7TV9x50emzLLEe14c9Mu+IO6IuePWRd6+hKJHD2ihRIh5DXqwIsg7GF4qDI+HyzO6XOd1Wahb+0USAb0x0fuCWICUhD8wuiUf+DxT34XEq9ijf7XRgx06/TA9kTo9QcagcfMcn0JbJOGsWHaTI9DLk4g7SIOoKlJ9Vi7OytO4sUG/SNQyq3zLvql7KqmXXQ72sGbJRxgq2aUQddk2DlMu9ISNG3lNO/dON8VKUJleIsq2W4tASX3xRhhc7v6HplJUV48GKTN1krcZ+klb3gdxrg+K/K2Y11Ocz9793xv+IdaZ3mZjPUiOxYBtCqKhWTP7Qkr7NgeCcIdyS6vBft61vn4Jex2uqMYf5ygxeTcmtlfnFKs/B+tFAHlnoWtx+Nb3MhEbffpy/PBXPD213F10nKQ+V7NIClt/PD7on3bXh8+RwpE/4pNoNAATjtw2/R4BVehU9qhWl8vgGsdgHcrxzhqGv6laPIDuj/yhFuE3f7lSPdcs96ngispZhWoduXqW6EE4GVFjYOXHZHqU7XrJDlwVIvubqjVb6jAaERrIFZGwKkkVzTp7OIDWBppF2HdOusUjuGRmtNH+188X5HBEsnaFnlco/DNl+7NClJ/wc6q/1s5ASETgAAAABJRU5ErkJggg=="
+            />
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>

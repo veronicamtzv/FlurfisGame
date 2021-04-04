@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    background-image: url(images/patron.jpg);
+    -webkit-user-select: none;
+    font-family: "Fredoka One", cursive;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: #002849;
+    width: 100%;
+    height: 100px;
+}
+
+.headerItem {
+    display: inline-block;
+    width: 33.33%;
+    height: 100px;
+}
+
+#areaTitulo {
+    float: left;
+}
+#areaTitulo img {
+    height: 100px;
+}
+#areaPuntaje {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+#areaCorazones {
+    text-align: center;
+
+    float: right;
+}
+
+.corazonesLinea {
+    padding-top: 20px;
+    width: 70%;
+}
+
+@media (max-width: 1200px) {
+    .corazonesLinea {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .corazonesLinea {
+        padding-top: 35px;
+    }
+}
+
+.corazonGrande {
+    padding-top: 10px;
+    width: 80px;
+}
+
+.puntos {
+    color: white;
+    font-size: 1.9em;
+}
+
+#areaDeJuego {
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    cursor: url(images/pawcursor.png), auto;
+    text-align: center;
+    vertical-align: middle;
+
+    /* La altura se define en javascript */
+}
+
+.botonGrande {
+    margin-top: 100px;
+    height: 70px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #f0833b;
+    color: white;
+    font-size: 2em;
+    font-family: "Fredoka One", cursive;
+    width: 40%;
+    transition: 0.3s;
+    outline: 0;
+    -moz-outline: 0;
+}
+
+.botonGrande:hover {
+    background-color: #ee6d17;
+}
+
+footer {
+    background-color: #002849;
+    width: 100%;
+    height: 50px;
+    /* Para que se vaya hasta abajo: */
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+#botonAyuda {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+/* Elementos */
+
+.item {
+    position: absolute;
+    top: -100px;
+    width: 10%;
+    max-width: 70px;
+    min-width: 50px;
+    -webkit-user-select: none;
+}
